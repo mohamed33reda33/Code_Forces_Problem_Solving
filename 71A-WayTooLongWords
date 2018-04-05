@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
+	{
+		char w[128];
+		scanf("%s",&w);
+		int m=strlen(w);
+		if(m>10)
+		{
+			char x,y;
+			int z;
+			x=w[0];
+			y=w[m-1];
+			z=m-2;
+			printf("\n%c%d%c\n",x,z,y);
+		}
+		else
+		printf("\n%s\n",w);
+	}
+}
+
