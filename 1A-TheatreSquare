@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+   long a,n,m;
+   long long c,j,i;
+   long double x,y;
+   scanf("%ld%ld%ld",&n,&m,&a);
+   x=(long double)n/a;
+   j=x;
+   if((x-j)>0)
+   {
+       j++;
+   }
+   y=(long double)m/a;
+   i=y;
+   if((y-i)>0)
+   {
+       i++;
+   }
+   c=(j*i);
+   printf("%llu",c);
+}
